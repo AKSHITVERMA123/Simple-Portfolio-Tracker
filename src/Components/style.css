@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Form {
+  /* height: 30em; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Form .table {
+  margin: auto 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Editing {
+  position: relative;
+  left: 200px;
+  margin: 10px;
+  color: rgb(20, 20, 53);
+}
+
+#Btns {
+  width: 200px;
+}
+
+#details {
+  visibility: hidden;
+}
+
+#Details {
+  visibility: hidden;
+}
+
+#Edit {
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  padding: 5px;
+}
+
+@media (max-width: 525px) {
+  #form1 {
+    height: 400px;
+    width: 420px;
+  }
+
+  #Det {
+    height: 220px;
+  }
+  label[id="name"],
+  label[id="ticker"] {
+    width: 180px;
+  }
+  input {
+    height: 30px;
+    width: 150px;
+  }
+
+  button[id="table"] {
+    position: relative;
+    top: 40px;
+  }
+}
