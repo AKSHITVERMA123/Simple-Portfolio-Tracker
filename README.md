@@ -13,9 +13,13 @@ Currently, two official plugins are available:
 
 These are the steps to run project locally -
 1. Create React + Vite App by following cmd
+
    $ npx create vite@latest simple-portfolio-tracker    - For creating the vite app
+
 2. cd simple-portfolio-tracker  -  go to project directory
+
 3. npm install - For installing the required dependencies and package
+
 4. npm run dev  -  For starting the development server
 
 
