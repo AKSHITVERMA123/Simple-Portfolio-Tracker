@@ -21,6 +21,7 @@ These are the steps to run project locally -
 3. npm install - For installing the required dependencies and package
 
 4. npm run dev  -  For starting the development server
+and the simple-portfolio-tracker application will run on by default on http://localhost:5173
 
 
 # Links to Deployment Simple-Portfolio-Tracker App
