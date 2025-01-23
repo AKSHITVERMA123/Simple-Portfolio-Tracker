@@ -51,8 +51,9 @@ public class SimpleportfoliotrackerService implements SimpleportfoliotrackerServ
 	     Stock st = this.rep.getReferenceById(stockid);
 	     this.rep.delete(st);
 	     for(int i=stockid+1;i<=this.rep.count();i++) {
-	    	 System.out.println("User has been Deleted of " + st.getstockid());
+	    	this.rep.getReferenceById(i).setstockid(i-1);
 	     }
+	     System.out.println("User has been Deleted of " + st.getstockid());
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
 
