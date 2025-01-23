@@ -20,18 +20,10 @@ import com.app.services.SimpleportfoliotrackerServiceIn;
 @RestController
 public class SimpleportfoliotrackerController {
 	
-	@Autowired				// For dependency injection courseService interface ka object layega and inject kar dega
+	@Autowired
 	private SimpleportfoliotrackerServiceIn pts;
-	
-//	@GetMapping("/home")
-//	public String Home() {
-//		return "Welcome to you in home page";
-//	}
-	
-	// get the courses
+
 	@GetMapping("/")
-	//or
-//	@RequestMapping(path="/courses",  method=RequestMethod.GET)
 	public List<Stock> fetchStocks() {
 		return this.pts.fetchStocks();
 	}
@@ -57,7 +49,6 @@ public class SimpleportfoliotrackerController {
 		try {
 			System.out.println(HttpStatus.OK);
 			return this.pts.deleteStock(stockid);
-//			return new ResponseEntity<>(HttpStatus.OK);
 			}
 		catch(Exception e) {
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
