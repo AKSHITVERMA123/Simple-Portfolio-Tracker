@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Simple-Portfolio-Tracker
 =======
 # React + Vite
